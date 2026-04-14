@@ -1,0 +1,71 @@
+body{
+  margin:0;
+  font-family: "Gloock"; sans-serif;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(58, 79, 52);
+  color: white;
+  padding: 15px 30px;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: rgb(35, 48, 30);
+  text-decoration: underline;
+}
+.logo{
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+
+
+
+
+.gallery{
+  display: inline-block;
+  border: 1px solid gray;
+  margin: 5px;
+  width: 500px;
+}
+
+.gallery .description{
+  padding: 10px;
+  text-align: center;
+  font-family: "Quicksand", "Georgia", "sans-serif;";
+}
+
+.gallery:hover{
+  border: 1px solid gray;
+}
+
+.gallery img{
+ width: 100%;
+ height: auto; 
+}
+
+.footer{
+  padding: 40px 0;
+  background-color: white;
+}
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: black;
+}
+
+
