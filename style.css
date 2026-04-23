@@ -1,6 +1,9 @@
 body{
   margin:0;
-  font-family: "Gloock"; sans-serif;
+  font-family: "Gloock", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .navbar{
@@ -33,20 +36,77 @@ body{
   color: white;
 }
 
-
-
-
-.gallery{
-  display: inline-block;
-  border: 1px solid gray;
-  margin: 5px;
-  width: 500px;
+.home-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+ padding: 20px;
+
+
+}
+
+.intro-text p {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+
+.intro-image {
+  flex: 1;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .home-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-image img {
+    max-width: 250px;
+  }
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery {
+  flex: 1 1 calc(33.333% - 15px);
+  border: 1px solid gray;
+}
+
 
 .gallery .description{
   padding: 10px;
   text-align: center;
-  font-family: "Quicksand", "Georgia", "sans-serif;";
+  font-family: "Quicksand", Georgia, sans-serif;
 }
 
 .gallery:hover{
@@ -56,6 +116,12 @@ body{
 .gallery img{
  width: 100%;
  height: auto; 
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    flex: 1 1 100%;
+  }
 }
 
 .site-footer {
@@ -86,8 +152,50 @@ body{
     flex-direction: column;
     gap: 10px;
   }
+}
 
   .footer-container a {
     font-size: 16px; 
+  }
+
+
+
+.page-content {
+  flex: 1;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.contact-info h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 15px;
+}
+.contact-info {
+  flex: 1;
+}
+
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
   }
 }
